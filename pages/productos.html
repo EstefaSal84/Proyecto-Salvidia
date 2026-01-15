@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Autopartes Productos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, ninmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        article {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 20px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        figure {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+        figcaption {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #222;
+        }
+        p {
+            font-size: 14px;
+            color: #555;
+        }
+        .precio {
+            color: #d32f2f;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        a:hover {
+            background: #0d47a1;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <main class="container py-4">
+<h1 class="text-center bg-danger m-2 p-3">Productos de Autopartes</h1>
+<div class="row g-4">
+<!-- producto 1 -->
+ <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 text-center">
+        <img src="../img/Captura de pantalla 2026-01-14 173214.jpg" class="card-img-top" alt=" filtro de aceite">
+        <div class="card-body">
+            <h5 class="card-title"> filtro de aceite</h5>
+            <p class="card-text"> compatible con Jeep y Fiat</p>
+            <p class="precio"> $34.700</p>
+            <a href="#" class="btn"> Agregar al Carrito</a>
+        </div>
+    </div>
+ </div>
+ <!-- etiqueta de producto 2 -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 text-center">
+        <img src="../img/bateria.jpg" card-img-top alt=" batería de automovil">
+        <div class="card-body">
+            <h5 class="card-title"> Batería</h5>
+            <p class="card-text"> Alta duración, garantía de un año</p>
+            <p class="precio"> $125.000</p>
+            <a href="#" class="btn"> Agergar al Carrito</a>
+        </div>
+    </div>
+ </div>
+ <!-- etiqueta de producto 3 -->
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card h-100 text-center">
+        <img src="../img/pastilla de freno.jpg" card-img-top alt=" Pastillas de Freno">
+         <div class="card-body">
+            <h5 class="card-title"> Pastillas de Freno</h5>
+            <p class="card-text"> Alto rendimiento y durabilidad</p>
+            <p class="precio"> $38.000</p>
+            <a href="#" class="btn"> Agegar al Carrito</a>
+         </div>
+    </div>
+  </div>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

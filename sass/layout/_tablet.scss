@@ -1,0 +1,60 @@
+/*mq tablet*/
+@use '../utilities/variables';
+@use '../utilities/mixin';
+
+@media screen and (min-width: 768px){
+    header{
+            background-color: #217dbb;
+    }
+}
+//  Estilo
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  // Header
+  .navbar {
+    padding: 1.5rem;
+  }
+
+  .navbar-brand img {
+    max-height: 80px; 
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  // Hero
+  section.bg-light {
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  // Buscador
+  .input-group {
+    width: 70%; 
+    margin: 0 auto;
+  }
+
+  // Cards
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  // Footer
+  footer {
+    font-size: 0.9rem;
+  }
+}

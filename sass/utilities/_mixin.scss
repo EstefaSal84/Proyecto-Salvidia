@@ -1,0 +1,27 @@
+// Mixin para botones
+@mixin boton($bg, $hover) {
+  background-color: $bg;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $hover;
+  }
+}
+
+// Mixin para centrar con flex
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+

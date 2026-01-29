@@ -5,48 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link de Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <!-- Bootstrap iconos -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
      <!-- link de mi css -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>ItalFiat Autopartes</title>
 </head>
 <body>
     <!-- etiqueta para el encabezado -->
-     <header>
-<!-- etiqueta para img -->
-
- <img src="img/Logo de ITALFIAT AUT.png" alt="logo italfiat con figura de un auto">
- <!-- etiqueta para el IG -->
-  <div class="logo-izquierdo">
-  <a href="https://www.instagram.com/" target="_blank">
-    <img src="img/Image20251129122538.png" alt="logo de Instagram">
-  </a>
-  </div>
-  <nav>
-    <!-- etiqueta para listas desordenadas -->
-     <ul class="menu">
-        <li> 
-            <!-- etiqueta para enlace -->
-             <a href="pages/contacto.html"> Contacto</a>
-             <a href="pages/productos.html"> Productos</a>
-             <a href="pages/quienes-somos.html"> Quienes somos</a>
-        </li>
-     </ul>
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <!-- etiqueta para img logo -->
+        <img src="img/Logo-de-ITALFIAT-AUT.png" alt="Logo ItalFiat" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        <!-- etiqueta lista ordenadas -->
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="pages/quienes-somos.html">Quienes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+        </ul>
+        <!-- etiqueta para el IG -->
+        <a href="https://www.instagram.com/" target="_blank" class="ms-3">
+          <img src="img/Image20251129122538.png" alt="Instagram" height="30">
+        </a>
+      </div>
+    </div>
   </nav>
-     </header>
-     <!-- etiqueta para el contenido principal -->
+</header>
+ <!-- etiqueta para el contenido principal -->
       <main>
 <!-- etiqueta para el titulo de mi web -->
- <h1>En ItalFiat encontraras todo lo que tu vehículo necesita </h1>
- <h2>Repuestos, accesorios y herramientas de las mejores marcas, con la atención y confianza que mereces<h2>
- <section class="Buscador">
-    <input type="text" placeholder="buscar..." >
-    </section>
+<main>
+  <section class="bg-light text-dark text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Todo lo que tu vehículo necesita</h1>
+      <p class="lead">Repuestos, accesorios y herramientas de las mejores marcas, con la atención y confianza que mereces.</p>
+      <div class="input-group mt-4 w-50 mx-auto">
+        <input type="text" class="form-control" placeholder="Buscar repuesto...">
+        <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+      </div>
+    </div>
+  </section>
+    <!-- etiqueta para galería de Grid -->
+     <section class="container my-5">
+  <h2 class="text-center mb-4">Nuestros Productos</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/filtro-de-aceite.jpg" class="card-img-top" alt="Filtro de Aceite">
+        <div class="card-body">
+          <h5 class="card-title">Filtro de Aceite</h5>
+          <p class="card-text">Alta calidad para motores Fiat.</p>
+          <a href="#" class="btn btn-outline-primary mt-3">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/pastilla-de-freno.jpg" class="card-img-top" alt="Pastilla de Freno">
+        <div class="card-body">
+          <h5 class="card-title">Pastilla de Freno</h5>
+          <p class="card-text">Seguridad y durabilidad garantizada.</p>
+          <a href="#" class="btn btn-outline-primary mt-3">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="img/bateria.jpg" class="card-img-top" alt="Batería ItalFiat">
+        <div class="card-body">
+          <h5 class="card-title">Batería ItalFiat</h5>
+          <p class="card-text">Potencia y rendimiento superior.</p>
+          <a href="#" class="btn btn-outline-primary mt-3">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       </main>
       <!-- etiqueta para el pie de pagina -->
-       <footer>
-<p>2026 ItalFiat Autopartes</p>
-<p>Todos los derechos reservados</p>
-       </footer>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2026 ItalFiat Autopartes</p>
+  <p class="mb-0">Todos los derechos reservados</p>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
